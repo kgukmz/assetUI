@@ -1,6 +1,6 @@
 local Utilites = {}
 
-function Utilities.MatchExecutor(Executor)
+function Utilites.MatchExecutor(Executor)
     if (identifyexecutor():match(Executor)) then
         return true
     end
@@ -8,7 +8,7 @@ function Utilities.MatchExecutor(Executor)
     return false
 end
 
-function Utilities.RandomString(StringLength)
+function Utilites.RandomString(StringLength)
     local CharSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     local RandomString = ""
     
@@ -20,7 +20,7 @@ function Utilities.RandomString(StringLength)
     return RandomString
 end
 
-function Utilities.MessageBoxNotify(Title, Description, Type)
+function Utilites.MessageBoxNotify(Title, Description, Type)
     if (not getgenv().messagebox) then
         return
     end
