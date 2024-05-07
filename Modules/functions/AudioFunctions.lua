@@ -1,1 +1,3 @@
+local AudioFunctions = {}
 
+return AudioFunctions
